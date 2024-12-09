@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WhatsApp Link Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>WhatsApp Link Generator</h1>
+    <p>Enter your phone number using the custom keyboard or paste it!</p>
+    <div class="form-group">
+      <select id="countryCode" class="form-control">
+        <option value="880">+880 Bangladesh</option>
+        <option value="966">+966 Saudi Arabi</option>
+        <option value="91">+91 India</option>
+        <option value="1">+1 USA</option>
+        <option value="44">+44 UK</option>
+        <option value="61">+61 (Australia)</option>
+        <option value="33">+33 (France)</option>
+        <option value="49">+49 (Germany)</option>
+        <option value="39">+39 (Italy)</option>
+        <option value="81">+81 (Japan)</option>
+        <option value="86">+86 (China)</option>
+        <option value="7">+7 (Russia)</option>
+        <option value="82">+82 (South Korea)</option>
+        <option value="34">+34 (Spain)</option>
+        <option value="27">+27 (South Africa)</option>
+        <option value="55">+55 (Brazil)</option>
+        <!-- Add more country codes as needed -->
+      </select>
+    </div>
+    <div class="form-group input-with-icon">
+      <input type="text" id="phoneInput" class="form-control" placeholder="Enter WhatsApp number" readonly>
+      <button id="pasteButton" class="icon-btn">📋</button>
+    </div>
+    <div class="custom-keyboard">
+      <button class="key">1</button>
+      <button class="key">2</button>
+      <button class="key">3</button>
+      <button class="key">4</button>
+      <button class="key">5</button>
+      <button class="key">6</button>
+      <button class="key">7</button>
+      <button class="key">8</button>
+      <button class="key">9</button>
+      <button class="key delete">⌫</button>
+      <button class="key">0</button>
+      <button id="generateButton" class="btn key generate-link-btn">Generate Link</button>
+    </div>
+    <a id="whatsappButton" class="btn btn-link" href="#" target="_blank" style="display: none;">Go to WhatsApp</a>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
